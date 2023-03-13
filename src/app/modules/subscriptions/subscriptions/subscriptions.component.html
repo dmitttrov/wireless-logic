@@ -1,0 +1,8 @@
+<ng-container *ngIf="subscriptions$ | async as subscriptions; else loading">
+  <app-data-table
+    [headers]="headers"
+    [subscriptions]="subscriptions"
+  ></app-data-table>
+</ng-container>
+
+<ng-template #loading>Loading...</ng-template>

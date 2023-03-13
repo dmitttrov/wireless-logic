@@ -1,0 +1,15 @@
+<table>
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let subscription of subscriptions">
+      <td>{{ subscription.optionTitle }}</td>
+      <td>{{ subscription.description }}</td>
+      <td>{{ subscription.price }}</td>
+      <td>{{ subscription.discount }}</td>
+    </tr>
+  </tbody>
+</table>
